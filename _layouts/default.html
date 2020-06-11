@@ -16,8 +16,25 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           {% if site.github.is_project_page %}
-            <a id="forkme_banner" href="{{ site.github.repository_url }}">XView on GitHub</a>
-            <a id="forkme_banner" href="about">About</a>
+          <ul class="forkme_banner">
+                        <li class="dropbtn1"><a href="about_us.html">ABOUT US</a>
+                            <ul class="dropdown-content1">
+                                <li><a href="our_story.html">Our Story</a></li>
+                                <li><a href="our_philosophy.html">Our Philosophy</a></li>
+                                <li><a href="newsletter.html">Newsletter</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropbtn2"><a href="departments.html">DEPARTMENTS</a>
+                            <ul class="dropdown-content2">
+                                <li><a href="our_store.html">Our Store</a></li>
+                                <li><a href="deli_and_bakery.html">Deli &amp; Bakery</a></li>
+                                <li><a href="specials.html">Specials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="join_us.html">JOIN US</a></li>
+                    </ul>
+            <a href="{{ site.github.repository_url }}">XView on GitHub</a>
+            <a href="about">About</a>
           {% endif %}
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
